@@ -1,9 +1,11 @@
 #Jogo da Palavra secreta
-palavra_secreta = 'developer'
+palavra_secreta = 'dev'
 letras_acertadas = ''
+numero_tentativas = 0
 
 while True:
     letra_digitada = input('Digite uma letra: ')
+    numero_tentativas += 1
 
     if len(letra_digitada) > 1:
         print('Digite apenas uma letra. ')
@@ -18,7 +20,16 @@ while True:
             palavra_formada += letra_secreta
         else:
             palavra_formada += '*'
-    print(palavra_formada)
+    print('palavra formada: ', palavra_formada)
+
+    if palavra_formada == palavra_secreta:
+        print('PARABÉNS!! VOCÊ GANHOU!!' )
+        print('A palavra era:', palavra_secreta)
+        print('tentativas:', numero_tentativas)
+        letras_acertadas = ''
+        numero_tentativas = 0
+        
+
     
             
 

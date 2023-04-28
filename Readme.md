@@ -1,2 +1,2 @@
 Este é o primeiro projeto da Mentoria
-Jo da Palavra secreta
+Jogo da Palavra secreta
