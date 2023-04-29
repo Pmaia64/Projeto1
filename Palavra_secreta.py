@@ -1,5 +1,5 @@
 #Jogo da Palavra secreta
-palavra_secreta = 'dev'
+palavra_secreta = 'vitoria'
 letras_acertadas = ''
 numero_tentativas = 0
 
