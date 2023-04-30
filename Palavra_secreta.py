@@ -1,5 +1,5 @@
 #Jogo da Palavra secreta
-palavra_secreta = 'vitoria'
+palavra_secreta = 'desafio'
 letras_acertadas = ''
 numero_tentativas = 0
 
@@ -19,7 +19,7 @@ while True:
         if letra_secreta in letras_acertadas:
             palavra_formada += letra_secreta
         else:
-            palavra_formada += '*'
+            palavra_formada += '°'
     print('palavra formada: ', palavra_formada)
 
     if palavra_formada == palavra_secreta:
